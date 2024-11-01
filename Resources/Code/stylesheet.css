@@ -1,0 +1,163 @@
+/* root */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 100%;
+}
+
+/* body */
+body {
+    background-color: #f1f1f1;
+}
+
+/* General display */
+header, nav, h1, h2, h3, h4, h5, h6 {
+    display: block;
+    color: #121212
+}
+
+h2 {
+    font-size: 5em;
+}
+
+h3 {
+    font-size: 2em;
+    margin: 20px auto;
+}
+
+/* header */
+header {
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+}
+
+/* navigation bar*/
+nav {
+    overflow: hidden;
+    background-color: white;
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    display: inline-flex;
+}
+
+nav a {
+    float: left;
+    text-align: center;
+    padding: 9px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #121212
+}
+
+nav a:hover {
+    background-color: lightslategray;
+    color: white;
+}
+
+/* main section */
+main {
+    padding: 10px;
+    display:  flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white
+}
+
+/* introduction section */
+#intro {
+    width: 100%;
+    padding: 80px 10px 10px  10px;
+    text-align: center;
+    display:  flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#intro  h1 {
+    font-size: 5em;
+    color: #121212
+}
+
+/* paragraphs */
+p {
+    font-size: 2em;
+    color: #5a5a5a;
+    text-align: justify;
+    line-height: 1.5;
+    margin: 10px 0 10px 0;
+    padding: 24px
+}
+
+/* Projects and skills */
+#projects, #skills {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+}
+
+#projects ul, #skills ul {
+    width: 100%;
+    list-style-type: none;
+    padding: 40px;
+    margin: 2px;
+    font-size: 2em;
+    display: flex; 
+    flex-wrap: wrap;
+}
+
+#projects ul li, #skills ul li {
+    padding: 20px;
+    margin: 10px;
+    flex: 1 1 200px; 
+}
+
+/* footer */
+#footer {
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.socials {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+}
+
+.socials a {
+    float: left;
+    text-align: center;
+    padding: 9px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #121212
+}
+
+.socials a:hover {
+    background-color: lightslategray;
+    color: white;
+}
+
+/* media queries */
+@media only screen and  (max-width: 600px) {
+    #shehroz, #projects-id, #skills-id, #hobbies-id, #footer {
+        width: 100%;
+    }
+}
