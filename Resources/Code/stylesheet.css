@@ -20,6 +20,7 @@ header, nav, h1, h2, h3, h4, h5, h6 {
 
 h2 {
     font-size: 5em;
+    margin: 20px 800px
 }
 
 h3 {
@@ -67,7 +68,7 @@ nav a:hover {
 
 /* main section */
 main {
-    padding: 10px;
+    padding: 40px;
     display:  flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -102,29 +103,43 @@ p {
     padding: 24px
 }
 
-/* Projects and skills */
-#projects, #skills {
-    width: 100%;
-    padding: 20px;
-    text-align: center;
-    background-color: white;
-}
+/* projects */
 
-#projects ul, #skills ul {
-    width: 100%;
-    list-style-type: none;
-    padding: 40px;
-    margin: 2px;
-    font-size: 2em;
-    display: flex; 
+.projects, .skills {
+    display: flex;
     flex-wrap: wrap;
-}
-
-#projects ul li, #skills ul li {
+    gap: 16px;
     padding: 20px;
-    margin: 10px;
-    flex: 1 1 200px; 
-}
+    justify-content: center;
+  }
+  
+  .project-card, .skill-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .project-name, .skill-name {
+    font-size: 1.5em;
+    color: #333;
+    padding: 16px 0;
+  }
+  
+  .project-image, .skill-image {
+    width: 300px;
+    height: 200px;
+    display: block;
+  }
+  
+  .project-description, .skill-description {
+    padding: 16px;
+    color: #666;
+    font-size: 1em;
+    line-height: 1.5;
+  }
 
 /* footer */
 #footer {
